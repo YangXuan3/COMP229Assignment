@@ -5,8 +5,25 @@
   
   <h1><%= title %></h1>
    <p>Welcome to <%= title %></p>
-<p>Contact us using the following details: <br><b>Phone Number:222-3456-7865. <br>Email:ddf@yahoo.com.</b></p>
-
+<p>You can contact by following methods: <br><b>Phone Number:416-827-6025. <br>Email:<a href="mailto:yxuan1@my.centennialcollege.ca">yxuan1@my.centennialcollege.ca</a></b></p>
+<form action="/" novalidate="novalidate">
+   <fieldset id="RegistForm">
+       <h3>If you want to contact me, please fill in all the blanks below:</h3>
+       <label for="FName">First Name:</label>
+       <input type="text" name="FirstName" id="FName" required="required" placeholder="firstname"><br/>
+       <label for="LName">Last Name:</label>
+       <input type="text" name="LastName" id="LName" required="required" placeholder="lastname"><br/>
+       <label for="number">Contact Number</label>
+       <input type="text" name="number" id="number"><br/>
+       <label for="email">Email:</label>
+       <input type="text" name="email" id="email"><br/>
+       <label for="message">Message:</label>
+       <input type="text" name="message" id="message"><br/>
+   </fieldset>
+      <br/>
+   <input type="submit" id="send" value="Contact">
+   <input type="reset" id="clear" value="Clear Form">
+</form> 
    <%-include partials/bottom_nav.ejs%>
 <%-include partials/footer.ejs%>   
 

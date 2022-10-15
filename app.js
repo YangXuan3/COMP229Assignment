@@ -1,3 +1,9 @@
+/*
+    File name: style.css
+    Student name: Yang Xuan
+    StudentID: 301186289
+    Date: Oct 15, 2022
+*/
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');

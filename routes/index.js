@@ -1,3 +1,9 @@
+/*
+    File name: style.css
+    Student name: Yang Xuan
+    StudentID: 301186289
+    Date: Oct 15, 2022
+*/
 var express = require('express');
 var router = express.Router();
 
@@ -16,8 +22,8 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About' });
 });
 
-router.get('/Products', function(req, res, next) {
-  res.render('Products', { title: 'Products' });
+router.get('/Projects', function(req, res, next) {
+  res.render('Projects', { title: 'Projects' });
 });
 
 router.get('/Services', function(req, res, next) {
