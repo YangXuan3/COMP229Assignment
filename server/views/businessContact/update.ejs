@@ -1,0 +1,62 @@
+<%-include ../partials/header.ejs%>
+<%-include ../partials/main_nav.ejs%>
+  
+<!--content for the Add page-->
+<div class = "container">
+    <div class = "row">
+        <div class ="offset-md-3 col-md-6">
+        <h1><%= title %></h1>
+        <form class = "form" method="POST">
+            <div class ="form group">
+                <label for="nameTextField">Business Name</label>
+                <input type="text" class="form control"
+                id="nameTextField"
+                placeholder="Enter the Business Name"
+                name="name"
+                value="<%=businessContact.name%>"
+                required>
+            </div>
+
+            <div class ="form group">
+                <label for="numberTextField">Business Number</label>
+                <input type="text" class="form control"
+                id="numberTextField"
+                placeholder="Enter the Business number"
+                name="number" 
+                value="<%=businessContact.number%>"
+                required>
+            </div>
+
+            <div class ="form group">
+                <label for="emailTextField">Email</label>
+                <input type="text" class="form control"
+                id="emailTextField"
+                placeholder="Enter the email"
+                name="email" 
+                value="<%=businessContact.email%>"
+                required>
+            </div>
+
+            <div class ="form group">
+                <label for="descriptionTextField">Description</label>
+                <input type="text" class="form control"
+                id="descriptionTextField"
+                placeholder="Enter the description"
+                name="description" 
+                value="<%=businessContact.description%>"
+                required>
+            </div>
+            
+            <button class = "btn btn-primary" type="submit"><i class ="fas fa-edit"></i>submit</button>
+            <a href='/businessContact' class="btn btn-warning"><i class="fas fa-undo"></i>cancel</a>  
+        
+        </form>
+        </div>
+        </div>
+    </div>
+
+
+  
+   <%-include ../partials/bottom_nav.ejs%>
+<%-include ../partials/footer.ejs%>   
+
