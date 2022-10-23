@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('week344:server');
+var app = require('./server/config/app');
+var debug = require('debug')('personalsite:server');
 var http = require('http');
 
 /**
@@ -13,6 +13,7 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || '3000');
+
 app.set('port', port);
 
 /**
@@ -88,3 +89,4 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
